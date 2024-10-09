@@ -1,0 +1,213 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.order-side {
+    width: 90px;
+    background-color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    max-width: 8000px;
+    align-items: center;
+    flex-grow: 1;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.search-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    width: 140%;
+}
+
+.search-bar {
+    padding: 7px;
+    border: 2px solid #291603;
+    border-radius: 5px;
+    width: 25%;
+    margin-left: 50%;
+}
+
+.filter-dropdown {
+    padding: 7px;
+    border: 2px solid #291603;
+    border-radius: 5px;
+    margin-right: 15%;
+    width: 4%;
+}
+
+.table-container {
+    width: 100%;
+    margin-top: 10px;
+    max-height: 400px;
+    overflow-y: auto; /* Enables vertical scrolling */
+    border: 1px solid #291603;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead, th {
+    position: sticky;
+    top: 0; /* Ensures the header remains at the top when scrolling */
+    background-color: #f2f2f2;
+    z-index: 1;
+}
+
+th, td {
+    border: 1px solid #291603;
+    padding: 6px;
+    text-align: center;
+}
+
+tbody {
+    display: block;
+    max-height: 350px; /* Limit tbody height for scrolling */
+    overflow-y: auto; /* Enable scrolling for the table body */
+    width: 100%;
+}
+
+tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+td {
+    width: 20%;
+}
+
+.view-receipt {
+    padding: 5px 10px;
+    background-color: #502311;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.view-receipt:hover {
+    background-color: #45a049;
+}
+
+
+
+
+
+
+
+
+
+.pay-now-button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.pay-now-button:hover {
+    background-color: #45a049; /* Darker green */
+}
+
+.popup, .overlay {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 75%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup {
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.input-display {
+    margin-bottom: 10px;
+}
+
+.num-pad-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.num-pad button {
+    width: 30%;
+    padding: 10px;
+    margin: 1px;
+}
+
+.pay-button, .cancel-button {
+    padding: 10px;
+    width: 100%;
+    margin-top: 9px;
+}
+
+.pay-button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.cancel-button {
+    background-color: #f44336;
+    color: white;
+}
+
+
+
+
+
+
+
+.pay-now-button {
+    background-color: #502311; /* Green */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.pay-now-button:hover {
+    background-color: #45a049; /* Darker green */
+}

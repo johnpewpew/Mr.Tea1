@@ -1,0 +1,179 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1100px;
+    margin: 20px auto;
+    gap: 20px;
+    left: 23%;
+}
+
+.employee-details {
+  border: 2px solid #291603;
+  border-radius: 10px;
+  padding: 15px;
+  width: 30%; /* Smaller width for the employee details */
+  background-color: #fff;
+}
+
+.employee-details h2 {
+  text-align: center;
+  font-size: 1.3em;
+  margin-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+input[type="text"], input[type="date"], input[type="number"], input[type="file"] {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 8px 15px;
+  background-color: #291603;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+button:hover {
+  background-color: #312f2e;
+}
+
+.image-container img {
+  display: block;
+  margin: 0 auto 10px auto;
+  width: 80px; /* Smaller image */
+  height: 80px;
+  border-radius: 5px;
+}
+
+.employee-list {
+  border: 2px solid #291603;
+  border-radius: 10px;
+  padding: 15px;
+  width: 65%; /* Larger width for the employee list */
+  background-color: #fff;
+}
+
+.employee-list h2 {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.employee-row {
+  cursor: pointer;
+}
+
+.employee-row:hover {
+  background-color: #f9f9f9;
+}
+
+tbody {
+  display: block;
+  max-height: 300px; /* Adjust based on your needs */
+  overflow-y: auto;  /* Make tbody scrollable */
+  width: 100%;
+}
+
+thead, tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+
+
+
+/*POP UP REGISTER 
+ /* The Modal (background) */
+ .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 10px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.modal-content button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}

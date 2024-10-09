@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    max-width: 800px; /* Reduced max width */
+    margin: 20px auto;
+    align-content: center;
+    margin-left: 33%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.5em; /* Smaller title size */
+    margin-bottom: 15px;
+}
+
+.search-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    gap: 1%;
+}
+
+.search-bar {
+    width: 90%;
+    padding: 7px;
+    border: 2px solid #291603;
+    border-radius: 5px;
+}
+
+.search-button {
+    padding: 7px;
+    border: 2px solid #291603;
+    border-radius: 5px;
+    width: 10%;
+}
+
+.filter-dropdown {
+    padding: 7px;
+    border: 2px solid #291603;
+    border-radius: 5px;
+    width: 13%;
+}
+
+.table-container {
+    width: 100%;
+    margin-top: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Ensures borders are combined */
+}
+
+th, td {
+    border: 1px solid #291603; /* Straight borders for table cells */
+    padding: 6px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.scrollable-tbody {
+    max-height: 400px; /* Maximum height for the table body */
+    overflow-y: auto; /* Enables vertical scrolling */
+    display: block; /* Allows scrolling */
+}
+
+tbody {
+    display: block; /* Enables block display for scrolling */
+    width: 100%; /* Full width for tbody */
+    height: 400px; /* Set the same height as the scrollable area */
+    overflow-y: auto; /* Enable vertical scrolling for tbody */
+}
+
+tr {
+    display: table; /* Makes sure each row is displayed as a table row */
+    width: 100%; /* Ensures full width for each row */
+    table-layout: fixed; /* Ensures that column widths are fixed */
+}
+
+td {
+    width: 20%; /* Equal width for each column */
+}
+
+.view-receipt {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.view-receipt:hover {
+    background-color: #45a049;
+}

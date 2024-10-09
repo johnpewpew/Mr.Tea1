@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1100px;
+    margin: 20px auto;
+    gap: 20px;
+    left: 23%;
+}
+
+.category-details {
+    border: 2px solid #291603;
+    border-radius: 10px;
+    padding: 15px;
+    width: 25%;
+    background-color: #fff;
+}
+
+.category-details h2 {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="file"] {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: #291603;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+button:hover {
+    background-color: #312f2e;
+}
+
+.image-container img {
+    display: block;
+    margin: 0 auto 10px auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+}
+
+.category-list {
+    border: 2px solid #291603;
+    border-radius: 10px;
+    padding: 15px;
+    width: 70%;
+    background-color: #fff;
+}
+
+.category-list h2 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+#search-input {
+    width: 100%;
+    padding: 7px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+tbody {
+    display: block;
+    max-height: 300px; /* Set the maximum height for scrolling */
+    overflow-y: auto;  /* Enable vertical scrolling */
+    width: 100%;
+}
+
+thead, tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+tbody tr:hover {
+    background-color: #f9f9f9;
+}
